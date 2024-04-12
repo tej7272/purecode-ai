@@ -13,8 +13,9 @@ import "swiper/css";
 const DishDetailsSwiper = ({ images }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  const dishImages =
-    [burritoBowlImg, burritoBowl2Img, burritoBowl3Img] ?? images;
+
+  const dishImages = images || 
+    [burritoBowlImg, burritoBowl2Img, burritoBowl3Img];
 
   return (
     <div className="grid grid-cols-1">
